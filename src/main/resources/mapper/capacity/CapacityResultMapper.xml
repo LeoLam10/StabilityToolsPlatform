@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pupu.stability.dao.capacity.CapacityResultMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.pupu.stability.domain.capacity.CapacityResult">
+                    <id column="id" property="id"/>
+                    <result column="component_id" property="componentId"/>
+                    <result column="instance_id" property="instanceId"/>
+                    <result column="index_id" property="indexId"/>
+                    <result column="is_critical" property="isCritical"/>
+                    <result column="conclusion" property="conclusion"/>
+                    <result column="remark" property="remark"/>
+                    <result column="time_create" property="timeCreate"/>
+                    <result column="time_update" property="timeUpdate"/>
+                    <result column="user_id_update" property="userIdUpdate"/>
+                    <result column="user_id_create" property="userIdCreate"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, component_id, instance_id, index_id, is_critical, conclusion, remark, time_create, time_update, user_id_update, user_id_create
+        </sql>
+
+</mapper>
