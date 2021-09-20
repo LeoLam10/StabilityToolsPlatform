@@ -3,7 +3,7 @@
 <mapper namespace="com.pupu.stability.dao.capacity.CapacityResultMapper">
 
         <!-- 通用查询映射结果 -->
-        <resultMap id="BaseResultMap" type="com.pupu.stability.domain.capacity.CapacityResult">
+        <resultMap id="BaseResultMap" type="com.pupu.stability.domain.vo.capacity.CapacityResultVo">
                     <id column="id" property="id"/>
                     <result column="component_id" property="componentId"/>
                     <result column="instance_id" property="instanceId"/>
