@@ -1,4 +1,4 @@
-package com.pupu.stability.domain.capacity;
+package com.pupu.stability.domain.vo.capacity;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -19,8 +19,8 @@ import java.io.Serializable;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@ApiModel(value="Capacityresult对象", description="容量巡检结果信息")
-public class CapacityResult implements Serializable {
+@ApiModel(value="CapacityResultVo", description="容量巡检结果信息")
+public class CapacityResultVo implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -35,6 +35,12 @@ public class CapacityResult implements Serializable {
 
     @ApiModelProperty(value = "指标id")
     private String indexId;
+
+    @ApiModelProperty(value = "发生时间")
+    private Double timeHappened;
+
+    @ApiModelProperty(value = "content")
+    private String context;
 
     @ApiModelProperty(value = "是否超过警戒水位")
     private Boolean isCritical;
@@ -56,6 +62,4 @@ public class CapacityResult implements Serializable {
 
     @ApiModelProperty(value = "创建用户id")
     private String userIdCreate;
-
-
 }
