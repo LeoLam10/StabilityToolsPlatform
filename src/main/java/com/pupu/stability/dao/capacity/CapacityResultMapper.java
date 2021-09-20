@@ -1,7 +1,8 @@
 package com.pupu.stability.dao.capacity;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.pupu.stability.domain.capacity.CapacityResult;
+import com.pupu.stability.domain.ro.CapacityResultRo;
+import com.pupu.stability.domain.vo.capacity.CapacityResultVo;
 
 /**
  * <p>
@@ -11,6 +12,6 @@ import com.pupu.stability.domain.capacity.CapacityResult;
  * @author maqh
  * @since 2021-09-18
  */
-public interface CapacityResultMapper extends BaseMapper<CapacityResult> {
+public interface CapacityResultMapper extends BaseMapper<CapacityResultVo> {
 
 }
