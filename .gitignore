@@ -30,4 +30,4 @@ build/
 ### VS Code ###
 .vscode/
 
-src/test/.DS_Store
+.DS_Store
